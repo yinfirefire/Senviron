@@ -9,7 +9,7 @@ Atopic Dermatitis (AD) is a chronic skin disease directly caused by dysfunction 
   <img src="img/symptom.png">
 </p>
 The most common soothing method is to apply lotion.<br/>
-<b>However the issue is when to apply lotion and here comes the aim of my project<b/>
+<b>However the issue is when to apply lotion and here comes the aim of my project<b/><br/>
 
 
 ### Aim and Detail
