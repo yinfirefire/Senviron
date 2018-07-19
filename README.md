@@ -1,15 +1,22 @@
-# Senviron - Multimodal Atopic Dermatitis Precaution System
+## Senviron <br/>
+<p align="right">
+<b>A Prototype of Multimodal Atopic Dermatitis Precaution System</b>
+</p>
 
-## Background
-Symptom of Atopic Dermatitis: 
+### Background <br/>
+Atopic Dermatitis is a skin disease caused by dysfunction of skin barrier(Stratum Corneum). 
+<p align="center">
 
-## Aim and Detail
+</p>
+![demo](demo.png) <br/>
+
+### Aim and Detail
 
 This is the Android APP designed for Environment Sensor (Plantower PMS5003).<br/>
 The device is built on Bluno Beetle.(MCU: ATmega328P, BLE: TI CC2540).<br/>
 The APP is built based on sample 
 
-## Hardware Setup
+### Hardware Setup
 
 Arduino code could be found below. 
 
@@ -78,9 +85,9 @@ void loop()
   Serial.println(); 
 }
 ```
-## APP on Android Platform
+### APP on Android Platform
 
-## SVM Model 
+### SVM Model 
 
-## Task List
+### Task List
 
