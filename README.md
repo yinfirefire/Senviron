@@ -4,10 +4,13 @@
 </p>
 
 ### Background <br/>
-Atopic Dermatitis is a skin disease caused by dysfunction of skin barrier(Stratum Corneum). 
+Atopic Dermatitis (AD) is a chronic skin disease directly caused by dysfunction of skin barrier(Stratum Corneum). Being well-known as a prevalent disease among children, AD is a global issue of reducing the quality of lives of both children and their parents. In Singapore, about 20% school-going children are suffering from AD.(1)
 <p align="center"> 
-<img src="img/ad.png">
+  <img src="img/symptom.png">
 </p>
+The most common soothing method is to apply lotion.<br/>
+<b>However the issue is when to apply lotion and here comes the aim of my project<b/>
+
 
 ### Aim and Detail
 
@@ -91,3 +94,4 @@ void loop()
 
 ### Task List
 
+### Reference
