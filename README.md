@@ -3,7 +3,9 @@
 This is the Android APP designed for Environment Sensor (Plantower PMS5003).<br/>
 The device is built on Bluno Beetle.(MCU: ATmega328P, BLE: TI CC2540).<br/>
 
-###Hardware Setup---
+###Hardware Setup
+---
+
 Sample arduino code could be found below. 
 ```
 char col;
@@ -70,4 +72,7 @@ void loop()
   Serial.println(); 
 }
 ```
-###APP on Android Platform---
+###APP on Android Platform
+---
+
+
