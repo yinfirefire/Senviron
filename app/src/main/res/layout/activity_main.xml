@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+
+        android:layout_alignParentStart="true"
+        android:cropToPadding="false"
+        android:src="@drawable/picture1" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/humpm" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="29dp"
+        android:background="@mipmap/ble"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ble" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pm"
+        android:layout_alignBottom="@+id/pm"
+        android:layout_marginStart="160dp"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginStart="30dp"
+        android:text="PM2.5:"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pm"
+        android:layout_below="@+id/pm"
+        android:layout_marginTop="25dp"
+        android:text="                          "
+        android:textColor="@color/background_material_light"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/netimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:src="@drawable/net" />
+
+
+    <TextView
+        android:id="@+id/tvh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="380dp"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/tvt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textSize="34dp" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/tvh"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="13dp"
+        android:background="@mipmap/refresh"
+        android:scaleType="fitXY"
+        android:src="@mipmap/refresh" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/imageButton"
+        android:src="@drawable/wea" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/netimage"
+        android:layout_marginTop="27dp"
+        android:text="By Yin Shuoyan"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
