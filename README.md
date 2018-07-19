@@ -5,10 +5,9 @@
 
 ### Background <br/>
 Atopic Dermatitis is a skin disease caused by dysfunction of skin barrier(Stratum Corneum). 
-<p align="center">
-
+<p align="center"> 
+<img src="img/ad.png">
 </p>
-![demo](demo.png) <br/>
 
 ### Aim and Detail
 
@@ -86,8 +85,9 @@ void loop()
 }
 ```
 ### APP on Android Platform
-
+![demo](img/demo.png) <br/>
 ### SVM Model 
+
 
 ### Task List
 
