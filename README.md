@@ -11,16 +11,17 @@ Atopic Dermatitis (AD) is a chronic skin disease directly caused by dysfunction 
 The most common soothing method is to apply lotion.<br/>
 <b>However the issue is when to apply lotion and here comes the aim of my project<b/><br/>
 
+### Aim and Detail <br/>
+What I inted to do is to make predictions about the outbreak of Atopic Dermatitis, so the patients could apply lotion before things go bad.<br/>
+Dysfunction of skin barrier has not been fully understood but there are factors that contribute to it. Environment, mental stress and genome are three different but interwined factors.(2,3,4,5) In this project, I use enviroment conditions (temperature, relative humidity, particle matters etc.) as the input feature to build a SVM model and mental stress based on ECG signal will be included in the future.<br/>
 
-### Aim and Detail
+Moreover, the application is redesigned with more functions like query local weather condition through [API](https://www.airvisual.com/api) and better user-interface.
 
-This is the Android APP designed for Environment Sensor (Plantower PMS5003).<br/>
-The device is built on Bluno Beetle.(MCU: ATmega328P, BLE: TI CC2540).<br/>
-The APP is built based on sample 
+### Hardware Setup <br/>
+Controller Board: [Bluno Beetle](https://www.dfrobot.com/product-1259.html) (MCU: ATmega328P, BLE: TI CC2540)<br/>
+Sensor: [Plantower PMS5003](https://www.dfrobot.com/product-1612.html)<br/>
 
-### Hardware Setup
-
-Arduino code could be found below. 
+Arduino Code 
 
 ```C
 char col;
@@ -87,11 +88,27 @@ void loop()
   Serial.println(); 
 }
 ```
-### APP on Android Platform
+### APP on Android Platform <br/>
+UI and functions are shown below.
 ![demo](img/demo.png) <br/>
 ### SVM Model 
+#### Dataset <br/>
+177 AD patients under 6 years old from the Seoul Metropolitan Area in Korea were enrolled and followed for 17 months between August 2013 and December 2014. [Dataset](https://zenodo.org/record/56248#.W1DKJ9IzaUk)<br/>
+#### Features and Classification Criteria<br/>
+Features: PM10, NO2, O3, temperature, relative humidity
 
+Classification: SCORAD(Scoring Atopic Dermatitis)
+![scorad](img/scorad.png)<br/>
+#### Results<br/>
+Testing Method: 7-fold cross validation<br/>
+Results include group training/testing and individual training/testing<br/>
+![pred](img/prediction.png)<br/>
 
 ### Task List
 
 ### Reference
+[(1)British Journal of Dermatology 2002, 146,1, 101](https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1365-2133.2002.04566.x)<br/>
+[(2)Pediatrics  2014, 134, 6, e1735](http://pediatrics.aappublications.org/content/134/6/e1735.long)<br/>
+[(3)Sci. Transl. Med. 2014, 6, 244, 244ra90](http://stm.sciencemag.org/content/6/244/244ra90)<br/>
+[(4)Curr. Allergy. Asthma. Rep.  2008, 8 ,4 312](https://www.ncbi.nlm.nih.gov/pubmed/18606083)<br/>
+[(5)J. Investig. Dermatol.  2009, 129, 8, 1892](https://www.jidonline.org/article/S0022-202X(15)34442-0/fulltext)
