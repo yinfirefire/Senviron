@@ -3,7 +3,10 @@
 This is the Android APP designed for Environment Sensor (Plantower PMS5003).<br/>
 The device is built on Bluno Beetle.(MCU: ATmega328P, BLE: TI CC2540).<br/>
 
-```char col;
+###Hardware Setup---
+Sample arduino code could be found below. 
+```
+char col;
 unsigned int PMSa = 0,FMHDSa = 0,TPSa = 0,HDSa = 0,PMSb = 0,FMHDSb = 0,TPSb = 0,HDSb = 0;
 unsigned int PMS = 0,FMHDS = 0,TPS = 0,HDS = 0,CR1 = 0,CR2 = 0;
 unsigned char buffer_RTT[40]={};   //Serial buffer; Received Data
@@ -37,9 +40,6 @@ void loop()
       PMSa=buffer_RTT[12];         //Read PM2.5 High 8-bit
       PMSb=buffer_RTT[13];         //Read PM2.5 Low 8-bit
       PMS=(PMSa<<8)+PMSb;          //PM2.5 value
-      FMHDSa=buffer_RTT[28];         //Read Formaldehyde High 8-bit
-      FMHDSb=buffer_RTT[29];         //Read Formaldehyde Low 8-bit 
-      FMHDS=(FMHDSa<<8)+FMHDSb;     //Formaldehyde value
       TPSa=buffer_RTT[30];          //Read Temperature High 8-bit
       TPSb=buffer_RTT[31];          //Read Temperature Low 8-bit
       TPS=(TPSa<<8)+TPSb;        //Temperature value
@@ -55,8 +55,7 @@ void loop()
       HDS = 0;
     }
   }
-  
-  Serial.println("-----------------------uart--------------------------");
+
   Serial.print("Temp : ");
   sprintf(tempStr,"%d%d.%d",TPS/100,(TPS/10)%10,TPS%10);
   Serial.print(tempStr);  
@@ -65,12 +64,10 @@ void loop()
   sprintf(tempStr,"%d%d.%d",HDS/100,(HDS/10)%10,HDS%10);              
   Serial.print(tempStr);            //Serial print humidity
   Serial.println(" %");               //"%"
-  Serial.print("HCHO : ");
-  Serial.print(FMHDS);
-  Serial.println(" ug/m3");        // Serial print formaldehyde, unit: ug/m³
   Serial.print("PM2.5: ");
   Serial.print(PMS);            
   Serial.println(" ug/m3");       // Serial print PM2.5, unit: ug/m³
   Serial.println(); 
 }
 ```
+###APP on Android Platform---
